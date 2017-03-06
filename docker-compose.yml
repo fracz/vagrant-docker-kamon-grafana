@@ -4,12 +4,12 @@ services:
   metrics:
     container_name: metrics
     image: kamon/grafana_graphite
-    volumes:
-      - /vagrant/volumes/data/whisper:/opt/graphite/storage/whisper:z
-      - /vagrant/volumes/data/elasticsearch:/var/lib/elasticsearch:z
-      - /vagrant/volumes/data/grafana:/opt/grafana/data:z
-      - /vagrant/volumes/log/graphite:/opt/graphite/storage/log:z
-      - /vagrant/volumes/log/elasticsearch:/var/log/elasticsearch:z
+ #   volumes:
+ #     - /vagrant/volumes/data/whisper:/opt/graphite/storage/whisper:z
+ #     - /vagrant/volumes/data/elasticsearch:/var/lib/elasticsearch:z
+ #     - /vagrant/volumes/data/grafana:/opt/grafana/data:z
+ #     - /vagrant/volumes/log/graphite:/opt/graphite/storage/log:z
+ #     - /vagrant/volumes/log/elasticsearch:/var/log/elasticsearch:z
     ports:
       - "80:80"
       - "81:81"
